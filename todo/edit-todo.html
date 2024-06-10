@@ -17,19 +17,23 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="new-todo.html">Home</a>
+                    <a class="nav-link" href="new-todo.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="edit-todo.html">Edit todo</a>
+                    <a class="nav-link active" aria-current="page" href="edit-todo.html">Edit todo</a>
                   </li>
         </nav>
     </header>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col mt-5">
+                <h1>Enter your information</h1>
                 <form>
                     <label class="form-label" for="userId">Enter your ID</label>
                     <input class="form-control" id="userId" type="number">
+
+                    <label class="form-label" for="courseId">Enter course ID</label>
+                    <input class="form-control" id="courseId" type="number">
 
                     <label class="form-label" for="title">Enter the Title</label>
                     <input class="form-control" id="title" type="text">
@@ -37,8 +41,14 @@
                     <label class="form-label" for="completed">Is it completed?</label>
                     <input class="form-control" id="completed" type="text">
 
+
+                    <div class="col">
+                        
                     <div class="mt-4">
                         <button type="button" id="subitBtn" class="btn btn-primary mb-3">Submit</button>
+                        <button type="button" id="restBtn" class="btn btn-primary mb-3" ></button>
+                    </div>
+
                     </div>
 
                 </form>
@@ -46,6 +56,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="scripts/todo.js"></script>
+    <script src="scripts/edit-todo.js"></script>
   </body>
 </html>
